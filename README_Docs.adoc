@@ -1,0 +1,27 @@
+= Notes on Cloudera documentation
+
+* Cloudera documentation is link:http://www.cloudera.com/documentation.html[available online] in HTML and PDF format.
+* Always check for the correct release for your installation when checking the documentation
+
+The docs may be updated between point releases to address typos and
+errors, but can also add new volumes or split materials to different
+volumes. There is currently no release notice that announces these
+updates.
+
+The C6.0 release comes with 15 different documents:
+
+* link:http://www.cloudera.com/documentation/enterprise/latest/PDF/cloudera-introduction.pdf[Introduction]
+* link:https://www.cloudera.com/documentation/enterprise/6/release-notes/PDF/cloudera-releases.pdf[Release Guide]
+* link:http://www.cloudera.com/documentation/enterprise/latest/PDF/cloudera-installation.pdf[Installation]
+* link:https://www.cloudera.com/documentation/enterprise/upgrade/PDF/cloudera-ug_upgrade.pdf[Upgrade]
+* link:http://www.cloudera.com/documentation/enterprise/latest/PDF/cloudera-quickstart.pdf[Quickstart Guides]
+* link:http://www.cloudera.com/documentation/enterprise/latest/PDF/cloudera-administration.pdf[Adminstration]
+* link:http://www.cloudera.com/documentation/enterprise/latest/PDF/cloudera-datamgmt.pdf[Data Management]
+* link:http://www.cloudera.com/documentation/enterprise/latest/PDF/cloudera-security.pdf[Security]
+* link:http://www.cloudera.com/documentation/enterprise/latest/PDF/cloudera-impala.pdf[Apache Impala Guide]
+* link:https://www.cloudera.com/documentation/enterprise/latest/PDF/cloudera-kudu.pdf[Apache Kudu Guide]
+* link:http://www.cloudera.com/documentation/enterprise/latest/PDF/cloudera-spark.pdf[Apache Spark Guide]
+* link:http://www.cloudera.com/documentation/enterprise/latest/PDF/cloudera-hive.pdf[Apache Hive Guide]
+* link:https://www.cloudera.com/documentation/enterprise/latest/PDF/cloudera-hbase.pdf[Apache HBase Guide]
+* link:https://www.cloudera.com/documentation/enterprise/latest/PDF/cloudera-hue.pdf[Hue Guide]
+* link:http://www.cloudera.com/documentation/enterprise/latest/PDF/cloudera-search.pdf[Cloudera Search]

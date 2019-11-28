@@ -1,0 +1,71 @@
+= Services Enablement Application Architecture Boot Camp
+
+This repository contains materials for Cloudera's Enablement
+Application Architecture Boot Camp
+
+During this boot camp please follow the guidelines below:
+
+* Use GitHub only to receive your lab work by pushing from your local
+copy. Treat your GitHub repo like a backup to what is on your laptop.
+Doing so will save a lot of headaches around maintaining the repo,
+as we will explain in class. The only changes you should make directly
+to your GitHub copy are Issues and Milestones, which are described in
+below.
+
+* Add your instructors as Collaborators to your GitHub repo. Because
+we have 25 students and only a few people to facilitate labs, we'll give
+you all the GitHub names you need at the beginning of class.
+The instructors' GitHub names are: `alexciobanu` and `araujo`.
++
+Adding your instructors as Collaborators will let them create _pull
+requests_ on your work. This is a way of editing your submissions
+without changing them directly.  When you review instructor edits,
+you can choose to reject them. Perhaps you would like to correct
+problems a different way or ignore them for a while. The pull request
+stands as a record of that interaction.
+
+* We use GitHub's _Issues_ feature to establish a workflow around your
+lab submissions.
++
+For each lab section, such as Installation or Storage, you will use
+an _Issue_ to track your progress. You will also use GitHub _Labels_
+to mark the current state of each lab (e.g., `submitted`, `stuck`,
+`review`). Your instructors will use labels to evaluate your work
+once you have marked it for review (such as `complete` or 'incomplete`).
++
+In a large class, it may take some time for an instructor to help you with a difficult problem.
+Use the Issue to describe the problem and show what diagnostic work you've tried to isolate your problem.
++
+You can include error messages or stack traces as Issue comments,
+or take a screenshot to show your cluster's current condition.  It
+is quite possible these initial steps will help you solve the problem
+yourself. Otherwise, they will show an instructor what you have
+tried so far.
+
+* Finally, we will use GitHub _Milestones_ to separate your lab work
+from your challenge work.
+
+Before you start any labs, make the following changes to your GitHub
+repo:
+
+* Add collaborators under `Settings -> Collaborators`.
+* Enable `Issues` under `Settings -> Options`. Click the `Features` box and enable `Issues`.
+* Click the `Issues` tab and the `Milestones` button
+** Create two milestones: `Labs` and `Challenges`
+** Set the deadlines for Thursday and Friday.
+* Click the `Labels` button and change your labels as follows:
+** Change `bug` to `stuck`
+** Change `duplicate` to `started`
+** Change `enhancement` to `didNotSubmit`
+** Change `help wanted` to `complete`
+** Change `invalid` to `review`
+** Add the label `WorkInProgress` and make it purple.
+** Change `wontfix` to `incomplete`; set the label color to `#fbca04`.
+** Leave the `question` Issue as it is
+
+One of the instructors will open an issue on your repo to acknowledge
+your invitation to collaborate. They will also review your repo for
+all the settings described here, and point out anything that isn't
+setup correctly. This issue will be the only one you're asked to
+close.  All other issues are to be closed by an instructor to show
+no further review is needed.

@@ -1,0 +1,106 @@
+= Application Architecture bootcamp
+
+=== Overview
+
+This boot camp is a hands-on training session designed new hire members of the consulting
+and pre-sales organizations.
+
+We focus on the common elements of a professional services engagement
+1. Data Science
+1. data ingestion
+1. data batch processing and querying
+1. data streaming
+
+We are going to:
+
+* Expanding out a single use case solution over the week.
+* Simulating a customer engagement with real problem solving
+
+=== Prerequisites
+
+We've designed this training as a continuing-education offering.
+While there are no hard prerequisites, everyone who attends should have:
+
+* An IDE ( possibly intellij ) deployed on their laptop
+* Developed and ran a hello world application in Scala or Python in their IDE
+* Completed the Install Bootcamp or equivalent training
+** Be comfortable deploying and managing a cluster
+** Be comfortable monitoring job progress in Cloudera Manager
+** Some comfort level in working with Linux
+** Some basic programing skills
+** Basic familiarity with Git.
+
+=== Agenda
+
+|===
+|Time |Day 1 |Day 2 |Day 3 |Day 4
+
+|Morning
+|Data Science Discussion
+|Ingestion Discssion
+|Batch Processing  Discussion
+|Streaming Discussion
+
+|Afternoon
+|Data Science Exercises
+|Ingestion Exercises
+|Batch Processing  Exercises
+|Streaming Exercises
+
+|===
+
+=== Rules of Engagement
+
+* Work individually to build out a solution for the problem
+* Develop iteratively – start simple and add piece by piece
+** Always start with hello world example and grow from there
+* If you are done, help others
+* Debug on your own for a bit. Don't stay stuck for too long. Ask for help
+* If you achieved something cool, present at the end of the day
+
+=== Section Components
+
+
+|===
+|Ingestion |Batch |Streaming
+
+|Sqoop, HDFS, Impala, Hue, NiFi
+|Oozie, Hive, Spark
+|Kafka, Spark Streaming, Kudu HBase, Solr (  )
+|===
+
+=== Use Case
+
+link:++https://nyti.ms/2jRIEnF[ Gravitational wave ]
+
+Your mission should you choose to accept it:
+
+* Find gravitational waves in astronomical detector measurements
+* Provide the measurement data set for end user querying
+
+You should:
+
+* Make it easy to query for finding the gravitational waves
+* Make the queries run fast
+* Minimize the time for measurements to be available after they are made
+* Minimize the effort involved in loading new measurements
+
+==== Data Model
+
+One record is one measurement:
+
+Each measurement is:
+* At a point in time
+* Made up of three signal amplitudes
+* From a gravitational wave detector somewhere in the world
+* Being performed by an astrophysicist
+* Listening to a nearby galaxy
+
+`*A gravitational wave is detected when the first and third amplitudes are > 0.995, and the second amplitude is < 0.005*`
+
+Now let's get to the tech!
+
+
+
+
+

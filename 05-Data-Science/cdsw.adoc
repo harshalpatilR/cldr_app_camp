@@ -1,0 +1,5 @@
+= Data Science
+
+=== Exercises
+
+https://github.infra.cloudera.com/alexbleakley/cdsw-training
