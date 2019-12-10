@@ -1,0 +1,25 @@
+....
+== copy JDBC to following directory
+/opt/cloudera/parcels/CDH/lib/sqoop/lib/
+
+
+== create user id for harshal to not step on others' toes
+
+== sqoop import commands
+
+
+sqoop import --connect jdbc:oracle:thin:@gravity-bootcamp-20191206141047224500000002.cghfmcr8k3ia.us-west-2.rds.amazonaws.com:1521:ORCL --username gravity_ro --password bootcamp  --table GRAVITY.MEASUREMENTS -m 6 --hive-import --hive-overwrite --create-hive-table --hive-database harshal_galaxy  --split-by DETECTOR_ID --hive-table measurements_big
+
+sqoop import --connect jdbc:oracle:thin:@gravity-bootcamp-20191206141047224500000002.cghfmcr8k3ia.us-west-2.rds.amazonaws.com:1521:ORCL --username gravity_ro --password bootcamp  --table GRAVITY.MEASUREMENTS_SMALLER -m 1 --hive-import --hive-overwrite --create-hive-table --hive-database harshal_galaxy --hive-table  measurments
+
+sqoop import --connect jdbc:oracle:thin:@gravity-bootcamp-20191206141047224500000002.cghfmcr8k3ia.us-west-2.rds.amazonaws.com:1521:ORCL --username gravity_ro --password bootcamp  --table GRAVITY.ASTROPHYSICISTS -m 1 --hive-import --hive-overwrite --create-hive-table --hive-database harshal_galaxy --hive-table  astrophysicists
+
+sqoop import --connect jdbc:oracle:thin:@gravity-bootcamp-20191206141047224500000002.cghfmcr8k3ia.us-west-2.rds.amazonaws.com:1521:ORCL --username gravity_ro --password bootcamp  --table GRAVITY.DETECTORS -m 1 --hive-import --hive-overwrite --create-hive-table --hive-database harshal_galaxy --hive-table detectors
+
+
+sqoop import --connect jdbc:oracle:thin:@gravity-bootcamp-20191206141047224500000002.cghfmcr8k3ia.us-west-2.rds.amazonaws.com:1521:ORCL --username gravity_ro --password bootcamp  --table GRAVITY.GALAXIES -m 1 --hive-import --hive-overwrite --create-hive-table --hive-database harshal_galaxy --hive-table galaxies
+
+
+
+....
+
