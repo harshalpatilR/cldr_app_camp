@@ -1,0 +1,27 @@
+....
+
+== PARTITIONED VIEW
+
+create view IF NOT EXISTS harshal_galaxy.viewp2 partitioned on (detector_id) as SELECT
+detectors.detector_name,
+detectors.country,
+detectors.latitude,
+detectors.longitude,
+astrophysicists.astrophysicist_name, astrophysicists.year_of_birth,
+astrophysicists.nationality,
+galaxies.galaxy_name, galaxies.galaxy_type, galaxies.distance_ly,
+galaxies.absolute_magnitude, galaxies.apparent_magnitude,
+galaxies.galaxy_group,
+measurements.measurement_id,
+measurements.measurement_time,
+measurements.amplitude_1,
+measurements.amplitude_2,
+measurements.amplitude_3,
+detectors.detector_id
+FROM harshal_galaxy.measurments as measurements
+join harshal_galaxy.detectors ON measurements.detector_id = detectors.detector_id
+join harshal_galaxy.astrophysicists ON measurements.astrophysicist_id = astrophysicists.astrophysicist_id
+join harshal_galaxy.galaxies ON measurements.galaxy_id = galaxies.galaxy_id; 
+
+
+....
