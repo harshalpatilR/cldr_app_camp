@@ -1,0 +1,11 @@
+....
+
+
+sqoop import --connect jdbc:oracle:thin:@gravity-bootcamp-20191206141047224500000002.cghfmcr8k3ia.us-west-2.rds.amazonaws.com:1521:ORCL --username gravity_ro --password bootcamp  --table GRAVITYEASUREMENTS -m 6 --hive-import --hive-overwrite --create-hive-table --hive-database harshal_galaxy  --split-by GALAXY_ID --hive-table measurements_big --compress --compression-codec snappy --as-parquetfile
+
+
+
+
+
+....
+
